@@ -9,7 +9,6 @@ using namespace std;
 
 // creates two lists (one empty), and does simple tests of list methods
 int main(int argc, char *argv[]) {
-
     IntList list1, list2;
     int first = 0, second = 0, last = 0, initial_size;
 
@@ -19,6 +18,7 @@ int main(int argc, char *argv[]) {
         cout << "usage: " << argv[0] << " int [int ...]" << endl;
         return 1;
     }
+
     initial_size = argc - 1;
     for (int i = 1; i < argc; i++) {
         int value = atoi(argv[i]);
